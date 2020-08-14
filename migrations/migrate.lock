@@ -1,0 +1,8 @@
+# Prisma Migrate lockfile v1
+
+20200814171724-init
+20200815014111-add-password-and-etc
+20200815014656-reset-etc
+20200815014911-f
+20200815024103-delete-post-field-published
+20200815024851-u
