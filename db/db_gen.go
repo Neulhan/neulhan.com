@@ -1292,6 +1292,570 @@ func (p postWithPrismaAuthorIDEqualsParamsUnique) authorIDField() {}
 func (postWithPrismaAuthorIDEqualsParamsUnique) unique() {}
 func (postWithPrismaAuthorIDEqualsParamsUnique) equals() {}
 
+type iPostWithPrismaImagesEqualsParams interface {
+	field() builder.Field
+	getQuery() builder.Query
+	equals()
+	postModel()
+	imagesField()
+}
+
+type postWithPrismaImagesSetParams struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p postWithPrismaImagesSetParams) field() builder.Field {
+	return p.data
+}
+
+func (p postWithPrismaImagesSetParams) getQuery() builder.Query {
+	return p.query
+}
+
+func (p postWithPrismaImagesSetParams) postModel() {}
+
+func (p postWithPrismaImagesSetParams) imagesField() {}
+
+type postWithPrismaImagesEqualsParams struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p postWithPrismaImagesEqualsParams) field() builder.Field {
+	return p.data
+}
+
+func (p postWithPrismaImagesEqualsParams) getQuery() builder.Query {
+	return p.query
+}
+
+func (p postWithPrismaImagesEqualsParams) postModel() {}
+
+func (p postWithPrismaImagesEqualsParams) imagesField() {}
+
+func (postWithPrismaImagesSetParams) settable()  {}
+func (postWithPrismaImagesEqualsParams) equals() {}
+
+type postWithPrismaImagesEqualsParamsUnique struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p postWithPrismaImagesEqualsParamsUnique) field() builder.Field {
+	return p.data
+}
+
+func (p postWithPrismaImagesEqualsParamsUnique) getQuery() builder.Query {
+	return p.query
+}
+
+func (p postWithPrismaImagesEqualsParamsUnique) postModel()   {}
+func (p postWithPrismaImagesEqualsParamsUnique) imagesField() {}
+
+func (postWithPrismaImagesEqualsParamsUnique) unique() {}
+func (postWithPrismaImagesEqualsParamsUnique) equals() {}
+
+type imageActions struct {
+	// client holds the prisma client
+	client *PrismaClient
+}
+
+var imageOutput = []builder.Output{
+	{Name: "id"},
+	{Name: "name"},
+	{Name: "url"},
+	{Name: "postID"},
+}
+
+type iImageWith interface {
+	getQuery() builder.Query
+	with()
+	imageModel()
+	imageRelation()
+}
+
+type iImageRelationWith interface {
+	getQuery() builder.Query
+	with()
+	imageRelation()
+}
+
+type iImageParams interface {
+	field() builder.Field
+	getQuery() builder.Query
+	imageModel()
+}
+
+type imageParams struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageParams) field() builder.Field {
+	return p.data
+}
+
+func (p imageParams) getQuery() builder.Query {
+	return p.query
+}
+
+func (p imageParams) imageModel() {}
+
+type iImageOrderByParams interface {
+	field() builder.Field
+	getQuery() builder.Query
+	imageModel()
+}
+
+type imageOrderByParams struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageOrderByParams) field() builder.Field {
+	return p.data
+}
+
+func (p imageOrderByParams) getQuery() builder.Query {
+	return p.query
+}
+
+func (p imageOrderByParams) imageModel() {}
+
+type iImageCursorParams interface {
+	field() builder.Field
+	getQuery() builder.Query
+	imageModel()
+	isCursor()
+}
+
+type imageCursorParams struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageCursorParams) field() builder.Field {
+	return p.data
+}
+
+func (p imageCursorParams) isCursor() {}
+
+func (p imageCursorParams) getQuery() builder.Query {
+	return p.query
+}
+
+func (p imageCursorParams) imageModel() {}
+
+type iImageParamsUnique interface {
+	field() builder.Field
+	getQuery() builder.Query
+	unique()
+	imageModel()
+}
+
+type imageParamsUnique struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageParamsUnique) imageModel() {}
+
+func (imageParamsUnique) unique() {}
+
+func (p imageParamsUnique) field() builder.Field {
+	return p.data
+}
+
+func (p imageParamsUnique) getQuery() builder.Query {
+	return p.query
+}
+
+type iImageEqualsParams interface {
+	field() builder.Field
+	getQuery() builder.Query
+	equals()
+	imageModel()
+}
+
+type imageEqualsParams struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageEqualsParams) imageModel() {}
+
+func (imageEqualsParams) equals() {}
+
+func (p imageEqualsParams) field() builder.Field {
+	return p.data
+}
+
+func (p imageEqualsParams) getQuery() builder.Query {
+	return p.query
+}
+
+type iImageEqualsParamsUnique interface {
+	field() builder.Field
+	getQuery() builder.Query
+	equals()
+	unique()
+	imageModel()
+}
+
+type imageEqualsParamsUnique struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageEqualsParamsUnique) imageModel() {}
+
+func (imageEqualsParamsUnique) unique() {}
+func (imageEqualsParamsUnique) equals() {}
+
+func (p imageEqualsParamsUnique) field() builder.Field {
+	return p.data
+}
+
+func (p imageEqualsParamsUnique) getQuery() builder.Query {
+	return p.query
+}
+
+type iImageSetParams interface {
+	field() builder.Field
+	settable()
+}
+
+type imageSetParams struct {
+	data builder.Field
+}
+
+func (imageSetParams) settable() {}
+
+func (p imageSetParams) field() builder.Field {
+	return p.data
+}
+
+type iImageWithPrismaIDEqualsParams interface {
+	field() builder.Field
+	getQuery() builder.Query
+	equals()
+	imageModel()
+	idField()
+}
+
+type imageWithPrismaIDSetParams struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageWithPrismaIDSetParams) field() builder.Field {
+	return p.data
+}
+
+func (p imageWithPrismaIDSetParams) getQuery() builder.Query {
+	return p.query
+}
+
+func (p imageWithPrismaIDSetParams) imageModel() {}
+
+func (p imageWithPrismaIDSetParams) idField() {}
+
+type imageWithPrismaIDEqualsParams struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageWithPrismaIDEqualsParams) field() builder.Field {
+	return p.data
+}
+
+func (p imageWithPrismaIDEqualsParams) getQuery() builder.Query {
+	return p.query
+}
+
+func (p imageWithPrismaIDEqualsParams) imageModel() {}
+
+func (p imageWithPrismaIDEqualsParams) idField() {}
+
+func (imageWithPrismaIDSetParams) settable()  {}
+func (imageWithPrismaIDEqualsParams) equals() {}
+
+type imageWithPrismaIDEqualsParamsUnique struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageWithPrismaIDEqualsParamsUnique) field() builder.Field {
+	return p.data
+}
+
+func (p imageWithPrismaIDEqualsParamsUnique) getQuery() builder.Query {
+	return p.query
+}
+
+func (p imageWithPrismaIDEqualsParamsUnique) imageModel() {}
+func (p imageWithPrismaIDEqualsParamsUnique) idField()    {}
+
+func (imageWithPrismaIDEqualsParamsUnique) unique() {}
+func (imageWithPrismaIDEqualsParamsUnique) equals() {}
+
+type iImageWithPrismaNameEqualsParams interface {
+	field() builder.Field
+	getQuery() builder.Query
+	equals()
+	imageModel()
+	nameField()
+}
+
+type imageWithPrismaNameSetParams struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageWithPrismaNameSetParams) field() builder.Field {
+	return p.data
+}
+
+func (p imageWithPrismaNameSetParams) getQuery() builder.Query {
+	return p.query
+}
+
+func (p imageWithPrismaNameSetParams) imageModel() {}
+
+func (p imageWithPrismaNameSetParams) nameField() {}
+
+type imageWithPrismaNameEqualsParams struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageWithPrismaNameEqualsParams) field() builder.Field {
+	return p.data
+}
+
+func (p imageWithPrismaNameEqualsParams) getQuery() builder.Query {
+	return p.query
+}
+
+func (p imageWithPrismaNameEqualsParams) imageModel() {}
+
+func (p imageWithPrismaNameEqualsParams) nameField() {}
+
+func (imageWithPrismaNameSetParams) settable()  {}
+func (imageWithPrismaNameEqualsParams) equals() {}
+
+type imageWithPrismaNameEqualsParamsUnique struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageWithPrismaNameEqualsParamsUnique) field() builder.Field {
+	return p.data
+}
+
+func (p imageWithPrismaNameEqualsParamsUnique) getQuery() builder.Query {
+	return p.query
+}
+
+func (p imageWithPrismaNameEqualsParamsUnique) imageModel() {}
+func (p imageWithPrismaNameEqualsParamsUnique) nameField()  {}
+
+func (imageWithPrismaNameEqualsParamsUnique) unique() {}
+func (imageWithPrismaNameEqualsParamsUnique) equals() {}
+
+type iImageWithPrismaURLEqualsParams interface {
+	field() builder.Field
+	getQuery() builder.Query
+	equals()
+	imageModel()
+	urlField()
+}
+
+type imageWithPrismaURLSetParams struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageWithPrismaURLSetParams) field() builder.Field {
+	return p.data
+}
+
+func (p imageWithPrismaURLSetParams) getQuery() builder.Query {
+	return p.query
+}
+
+func (p imageWithPrismaURLSetParams) imageModel() {}
+
+func (p imageWithPrismaURLSetParams) urlField() {}
+
+type imageWithPrismaURLEqualsParams struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageWithPrismaURLEqualsParams) field() builder.Field {
+	return p.data
+}
+
+func (p imageWithPrismaURLEqualsParams) getQuery() builder.Query {
+	return p.query
+}
+
+func (p imageWithPrismaURLEqualsParams) imageModel() {}
+
+func (p imageWithPrismaURLEqualsParams) urlField() {}
+
+func (imageWithPrismaURLSetParams) settable()  {}
+func (imageWithPrismaURLEqualsParams) equals() {}
+
+type imageWithPrismaURLEqualsParamsUnique struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageWithPrismaURLEqualsParamsUnique) field() builder.Field {
+	return p.data
+}
+
+func (p imageWithPrismaURLEqualsParamsUnique) getQuery() builder.Query {
+	return p.query
+}
+
+func (p imageWithPrismaURLEqualsParamsUnique) imageModel() {}
+func (p imageWithPrismaURLEqualsParamsUnique) urlField()   {}
+
+func (imageWithPrismaURLEqualsParamsUnique) unique() {}
+func (imageWithPrismaURLEqualsParamsUnique) equals() {}
+
+type iImageWithPrismaPostEqualsParams interface {
+	field() builder.Field
+	getQuery() builder.Query
+	equals()
+	imageModel()
+	postField()
+}
+
+type imageWithPrismaPostSetParams struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageWithPrismaPostSetParams) field() builder.Field {
+	return p.data
+}
+
+func (p imageWithPrismaPostSetParams) getQuery() builder.Query {
+	return p.query
+}
+
+func (p imageWithPrismaPostSetParams) imageModel() {}
+
+func (p imageWithPrismaPostSetParams) postField() {}
+
+type imageWithPrismaPostEqualsParams struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageWithPrismaPostEqualsParams) field() builder.Field {
+	return p.data
+}
+
+func (p imageWithPrismaPostEqualsParams) getQuery() builder.Query {
+	return p.query
+}
+
+func (p imageWithPrismaPostEqualsParams) imageModel() {}
+
+func (p imageWithPrismaPostEqualsParams) postField() {}
+
+func (imageWithPrismaPostSetParams) settable()  {}
+func (imageWithPrismaPostEqualsParams) equals() {}
+
+type imageWithPrismaPostEqualsParamsUnique struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageWithPrismaPostEqualsParamsUnique) field() builder.Field {
+	return p.data
+}
+
+func (p imageWithPrismaPostEqualsParamsUnique) getQuery() builder.Query {
+	return p.query
+}
+
+func (p imageWithPrismaPostEqualsParamsUnique) imageModel() {}
+func (p imageWithPrismaPostEqualsParamsUnique) postField()  {}
+
+func (imageWithPrismaPostEqualsParamsUnique) unique() {}
+func (imageWithPrismaPostEqualsParamsUnique) equals() {}
+
+type iImageWithPrismaPostIDEqualsParams interface {
+	field() builder.Field
+	getQuery() builder.Query
+	equals()
+	imageModel()
+	postIDField()
+}
+
+type imageWithPrismaPostIDSetParams struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageWithPrismaPostIDSetParams) field() builder.Field {
+	return p.data
+}
+
+func (p imageWithPrismaPostIDSetParams) getQuery() builder.Query {
+	return p.query
+}
+
+func (p imageWithPrismaPostIDSetParams) imageModel() {}
+
+func (p imageWithPrismaPostIDSetParams) postIDField() {}
+
+type imageWithPrismaPostIDEqualsParams struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageWithPrismaPostIDEqualsParams) field() builder.Field {
+	return p.data
+}
+
+func (p imageWithPrismaPostIDEqualsParams) getQuery() builder.Query {
+	return p.query
+}
+
+func (p imageWithPrismaPostIDEqualsParams) imageModel() {}
+
+func (p imageWithPrismaPostIDEqualsParams) postIDField() {}
+
+func (imageWithPrismaPostIDSetParams) settable()  {}
+func (imageWithPrismaPostIDEqualsParams) equals() {}
+
+type imageWithPrismaPostIDEqualsParamsUnique struct {
+	data  builder.Field
+	query builder.Query
+}
+
+func (p imageWithPrismaPostIDEqualsParamsUnique) field() builder.Field {
+	return p.data
+}
+
+func (p imageWithPrismaPostIDEqualsParamsUnique) getQuery() builder.Query {
+	return p.query
+}
+
+func (p imageWithPrismaPostIDEqualsParamsUnique) imageModel()  {}
+func (p imageWithPrismaPostIDEqualsParamsUnique) postIDField() {}
+
+func (imageWithPrismaPostIDEqualsParamsUnique) unique() {}
+func (imageWithPrismaPostIDEqualsParamsUnique) equals() {}
+
 // --- template create.gotpl ---
 
 // Creates a single user.
@@ -1406,6 +1970,64 @@ func (r postCreateOne) Exec(ctx context.Context) (PostModel, error) {
 		return PostModel{}, fmt.Errorf(first.Message)
 	}
 	return v.Data.CreateOnePost, err
+}
+
+// Creates a single user.
+func (r imageActions) CreateOne(
+	_name imageWithPrismaNameSetParams, _url imageWithPrismaURLSetParams, _post imageWithPrismaPostSetParams,
+	optional ...imageSetParams,
+) imageCreateOne {
+	var v imageCreateOne
+	v.query = builder.NewQuery()
+	v.query.Client = r.client
+
+	v.query.Operation = "mutation"
+	v.query.Method = "createOne"
+	v.query.Model = "Image"
+	v.query.Outputs = imageOutput
+
+	var fields []builder.Field
+
+	fields = append(fields, _name.data)
+	fields = append(fields, _url.data)
+	fields = append(fields, _post.data)
+
+	for _, q := range optional {
+		fields = append(fields, q.data)
+	}
+
+	v.query.Inputs = append(v.query.Inputs, builder.Input{
+		Name:   "data",
+		Fields: fields,
+	})
+	return v
+}
+
+func (r imageCreateOne) With(params ...iImageRelationWith) imageCreateOne {
+	for _, q := range params {
+		query := q.getQuery()
+		r.query.Outputs = append(r.query.Outputs, builder.Output{
+			Name:    query.Method,
+			Inputs:  query.Inputs,
+			Outputs: query.Outputs,
+		})
+	}
+
+	return r
+}
+
+type imageCreateOne struct {
+	query builder.Query
+}
+
+func (r imageCreateOne) Exec(ctx context.Context) (ImageModel, error) {
+	var v createOneImageResponse
+	err := r.query.Exec(ctx, &v)
+	if v.Errors != nil {
+		first := v.Errors[0]
+		return ImageModel{}, fmt.Errorf(first.Message)
+	}
+	return v.Data.CreateOneImage, err
 }
 
 // --- template find.gotpl ---
@@ -2202,6 +2824,251 @@ func (r postToAuthorDeleteMany) Exec(ctx context.Context) (int, error) {
 	return v.Data.DeleteManyPost.Count, err
 }
 
+type postToImagesFindOne struct {
+	query builder.Query
+}
+
+func (r postToImagesFindOne) getQuery() builder.Query {
+	return r.query
+}
+
+func (r postToImagesFindOne) with()         {}
+func (r postToImagesFindOne) postModel()    {}
+func (r postToImagesFindOne) postRelation() {}
+
+func (r postToImagesFindOne) With(params ...iImageRelationWith) postToImagesFindOne {
+	for _, q := range params {
+		query := q.getQuery()
+		r.query.Outputs = append(r.query.Outputs, builder.Output{
+			Name:    query.Method,
+			Inputs:  query.Inputs,
+			Outputs: query.Outputs,
+		})
+	}
+
+	return r
+}
+
+func (r postToImagesFindOne) Exec(ctx context.Context) (
+	PostModel,
+	error,
+) {
+	var v findOnePostResponse
+	err := r.query.Exec(ctx, &v)
+	if v.Errors != nil {
+		first := v.Errors[0]
+		return PostModel{}, fmt.Errorf(first.Message)
+	}
+
+	if v.Data.FindOnePost == nil {
+		return PostModel{}, ErrNotFound
+	}
+
+	return *v.Data.FindOnePost, err
+}
+
+func (r postToImagesFindOne) Update(params ...iPostSetParams) postToImagesUpdateOne {
+	r.query.Operation = "mutation"
+	r.query.Method = "updateOne"
+	r.query.Model = "Post"
+	r.query.Outputs = postOutput
+
+	var v postToImagesUpdateOne
+	v.query = r.query
+	var fields []builder.Field
+	for _, q := range params {
+		fields = append(fields, q.field())
+	}
+	v.query.Inputs = append(v.query.Inputs, builder.Input{
+		Name:   "data",
+		Fields: fields,
+	})
+	return v
+}
+
+type postToImagesUpdateOne struct {
+	query builder.Query
+}
+
+func (r postToImagesUpdateOne) Exec(ctx context.Context) (PostModel, error) {
+	var v updateOnePostResponse
+	err := r.query.Exec(ctx, &v)
+	if v.Errors != nil {
+		first := v.Errors[0]
+		return PostModel{}, fmt.Errorf(first.Message)
+	}
+	return v.Data.UpdateOnePost, err
+}
+
+func (r postToImagesFindOne) Delete() postToImagesDeleteOne {
+	var v postToImagesDeleteOne
+	v.query = r.query
+	v.query.Operation = "mutation"
+	v.query.Method = "deleteOne"
+	v.query.Model = "Post"
+	v.query.Outputs = postOutput
+	return v
+}
+
+type postToImagesDeleteOne struct {
+	query builder.Query
+}
+
+func (r postToImagesDeleteOne) Exec(ctx context.Context) (PostModel, error) {
+	var v deleteOnePostResponse
+	err := r.query.Exec(ctx, &v)
+	if v.Errors != nil {
+		first := v.Errors[0]
+		return PostModel{}, fmt.Errorf(first.Message)
+	}
+	return v.Data.DeleteOnePost, err
+}
+
+type postToImagesFindMany struct {
+	query builder.Query
+}
+
+func (r postToImagesFindMany) getQuery() builder.Query {
+	return r.query
+}
+
+func (r postToImagesFindMany) with()         {}
+func (r postToImagesFindMany) postModel()    {}
+func (r postToImagesFindMany) postRelation() {}
+
+func (r postToImagesFindMany) With(params ...iImageRelationWith) postToImagesFindMany {
+	for _, q := range params {
+		query := q.getQuery()
+		r.query.Outputs = append(r.query.Outputs, builder.Output{
+			Name:    query.Method,
+			Inputs:  query.Inputs,
+			Outputs: query.Outputs,
+		})
+	}
+
+	return r
+}
+
+func (r postToImagesFindMany) OrderBy(param iPostOrderByParams) postToImagesFindMany {
+	direction, _ := param.field().Value.(runtime.Direction)
+	r.query.Inputs = append(r.query.Inputs, builder.Input{
+		Name:  "orderBy",
+		Value: runtime.Direction(param.field().Name + "_" + string(direction)),
+	})
+	return r
+}
+
+func (r postToImagesFindMany) Skip(count int) postToImagesFindMany {
+	r.query.Inputs = append(r.query.Inputs, builder.Input{
+		Name:  "skip",
+		Value: count,
+	})
+	return r
+}
+
+func (r postToImagesFindMany) First(count int) postToImagesFindMany {
+	r.query.Inputs = append(r.query.Inputs, builder.Input{
+		Name:  "first",
+		Value: count,
+	})
+	return r
+}
+
+func (r postToImagesFindMany) Last(count int) postToImagesFindMany {
+	r.query.Inputs = append(r.query.Inputs, builder.Input{
+		Name:  "last",
+		Value: count,
+	})
+	return r
+}
+
+func (r postToImagesFindMany) After(cursor iPostCursorParams) postToImagesFindMany {
+	r.query.Inputs = append(r.query.Inputs, builder.Input{
+		Name:   "after",
+		Fields: []builder.Field{cursor.field()},
+	})
+	return r
+}
+
+func (r postToImagesFindMany) Before(cursor iPostCursorParams) postToImagesFindMany {
+	r.query.Inputs = append(r.query.Inputs, builder.Input{
+		Name:   "before",
+		Fields: []builder.Field{cursor.field()},
+	})
+	return r
+}
+
+func (r postToImagesFindMany) Exec(ctx context.Context) (
+	[]PostModel,
+	error,
+) {
+	var v findManyPostResponse
+	err := r.query.Exec(ctx, &v)
+	if v.Errors != nil {
+		first := v.Errors[0]
+		return []PostModel{}, fmt.Errorf(first.Message)
+	}
+
+	return v.Data.FindManyPost, err
+}
+
+func (r postToImagesFindMany) Update(params ...iPostSetParams) postToImagesUpdateMany {
+	r.query.Operation = "mutation"
+	r.query.Method = "updateMany"
+	r.query.Model = "Post"
+	r.query.Outputs = countOutput
+
+	var v postToImagesUpdateMany
+	v.query = r.query
+	var fields []builder.Field
+	for _, q := range params {
+		fields = append(fields, q.field())
+	}
+	v.query.Inputs = append(v.query.Inputs, builder.Input{
+		Name:   "data",
+		Fields: fields,
+	})
+	return v
+}
+
+type postToImagesUpdateMany struct {
+	query builder.Query
+}
+
+func (r postToImagesUpdateMany) Exec(ctx context.Context) (int, error) {
+	var v updateManyPostResponse
+	err := r.query.Exec(ctx, &v)
+	if v.Errors != nil {
+		first := v.Errors[0]
+		return -1, fmt.Errorf(first.Message)
+	}
+	return v.Data.UpdateManyPost.Count, err
+}
+
+func (r postToImagesFindMany) Delete() postToImagesDeleteMany {
+	var v postToImagesDeleteMany
+	v.query = r.query
+	v.query.Operation = "mutation"
+	v.query.Method = "deleteMany"
+	v.query.Model = "Post"
+	v.query.Outputs = countOutput
+	return v
+}
+
+type postToImagesDeleteMany struct {
+	query builder.Query
+}
+
+func (r postToImagesDeleteMany) Exec(ctx context.Context) (int, error) {
+	var v deleteManyPostResponse
+	err := r.query.Exec(ctx, &v)
+	if v.Errors != nil {
+		first := v.Errors[0]
+		return -1, fmt.Errorf(first.Message)
+	}
+	return v.Data.DeleteManyPost.Count, err
+}
+
 type postFindOne struct {
 	query builder.Query
 }
@@ -2504,6 +3371,553 @@ func (r postDeleteMany) Exec(ctx context.Context) (int, error) {
 	return v.Data.DeleteManyPost.Count, err
 }
 
+type imageToPostFindOne struct {
+	query builder.Query
+}
+
+func (r imageToPostFindOne) getQuery() builder.Query {
+	return r.query
+}
+
+func (r imageToPostFindOne) with()          {}
+func (r imageToPostFindOne) imageModel()    {}
+func (r imageToPostFindOne) imageRelation() {}
+
+func (r imageToPostFindOne) With(params ...iPostRelationWith) imageToPostFindOne {
+	for _, q := range params {
+		query := q.getQuery()
+		r.query.Outputs = append(r.query.Outputs, builder.Output{
+			Name:    query.Method,
+			Inputs:  query.Inputs,
+			Outputs: query.Outputs,
+		})
+	}
+
+	return r
+}
+
+func (r imageToPostFindOne) Exec(ctx context.Context) (
+	ImageModel,
+	error,
+) {
+	var v findOneImageResponse
+	err := r.query.Exec(ctx, &v)
+	if v.Errors != nil {
+		first := v.Errors[0]
+		return ImageModel{}, fmt.Errorf(first.Message)
+	}
+
+	if v.Data.FindOneImage == nil {
+		return ImageModel{}, ErrNotFound
+	}
+
+	return *v.Data.FindOneImage, err
+}
+
+func (r imageToPostFindOne) Update(params ...iImageSetParams) imageToPostUpdateOne {
+	r.query.Operation = "mutation"
+	r.query.Method = "updateOne"
+	r.query.Model = "Image"
+	r.query.Outputs = imageOutput
+
+	var v imageToPostUpdateOne
+	v.query = r.query
+	var fields []builder.Field
+	for _, q := range params {
+		fields = append(fields, q.field())
+	}
+	v.query.Inputs = append(v.query.Inputs, builder.Input{
+		Name:   "data",
+		Fields: fields,
+	})
+	return v
+}
+
+type imageToPostUpdateOne struct {
+	query builder.Query
+}
+
+func (r imageToPostUpdateOne) Exec(ctx context.Context) (ImageModel, error) {
+	var v updateOneImageResponse
+	err := r.query.Exec(ctx, &v)
+	if v.Errors != nil {
+		first := v.Errors[0]
+		return ImageModel{}, fmt.Errorf(first.Message)
+	}
+	return v.Data.UpdateOneImage, err
+}
+
+func (r imageToPostFindOne) Delete() imageToPostDeleteOne {
+	var v imageToPostDeleteOne
+	v.query = r.query
+	v.query.Operation = "mutation"
+	v.query.Method = "deleteOne"
+	v.query.Model = "Image"
+	v.query.Outputs = imageOutput
+	return v
+}
+
+type imageToPostDeleteOne struct {
+	query builder.Query
+}
+
+func (r imageToPostDeleteOne) Exec(ctx context.Context) (ImageModel, error) {
+	var v deleteOneImageResponse
+	err := r.query.Exec(ctx, &v)
+	if v.Errors != nil {
+		first := v.Errors[0]
+		return ImageModel{}, fmt.Errorf(first.Message)
+	}
+	return v.Data.DeleteOneImage, err
+}
+
+type imageToPostFindMany struct {
+	query builder.Query
+}
+
+func (r imageToPostFindMany) getQuery() builder.Query {
+	return r.query
+}
+
+func (r imageToPostFindMany) with()          {}
+func (r imageToPostFindMany) imageModel()    {}
+func (r imageToPostFindMany) imageRelation() {}
+
+func (r imageToPostFindMany) With(params ...iPostRelationWith) imageToPostFindMany {
+	for _, q := range params {
+		query := q.getQuery()
+		r.query.Outputs = append(r.query.Outputs, builder.Output{
+			Name:    query.Method,
+			Inputs:  query.Inputs,
+			Outputs: query.Outputs,
+		})
+	}
+
+	return r
+}
+
+func (r imageToPostFindMany) OrderBy(param iImageOrderByParams) imageToPostFindMany {
+	direction, _ := param.field().Value.(runtime.Direction)
+	r.query.Inputs = append(r.query.Inputs, builder.Input{
+		Name:  "orderBy",
+		Value: runtime.Direction(param.field().Name + "_" + string(direction)),
+	})
+	return r
+}
+
+func (r imageToPostFindMany) Skip(count int) imageToPostFindMany {
+	r.query.Inputs = append(r.query.Inputs, builder.Input{
+		Name:  "skip",
+		Value: count,
+	})
+	return r
+}
+
+func (r imageToPostFindMany) First(count int) imageToPostFindMany {
+	r.query.Inputs = append(r.query.Inputs, builder.Input{
+		Name:  "first",
+		Value: count,
+	})
+	return r
+}
+
+func (r imageToPostFindMany) Last(count int) imageToPostFindMany {
+	r.query.Inputs = append(r.query.Inputs, builder.Input{
+		Name:  "last",
+		Value: count,
+	})
+	return r
+}
+
+func (r imageToPostFindMany) After(cursor iImageCursorParams) imageToPostFindMany {
+	r.query.Inputs = append(r.query.Inputs, builder.Input{
+		Name:   "after",
+		Fields: []builder.Field{cursor.field()},
+	})
+	return r
+}
+
+func (r imageToPostFindMany) Before(cursor iImageCursorParams) imageToPostFindMany {
+	r.query.Inputs = append(r.query.Inputs, builder.Input{
+		Name:   "before",
+		Fields: []builder.Field{cursor.field()},
+	})
+	return r
+}
+
+func (r imageToPostFindMany) Exec(ctx context.Context) (
+	[]ImageModel,
+	error,
+) {
+	var v findManyImageResponse
+	err := r.query.Exec(ctx, &v)
+	if v.Errors != nil {
+		first := v.Errors[0]
+		return []ImageModel{}, fmt.Errorf(first.Message)
+	}
+
+	return v.Data.FindManyImage, err
+}
+
+func (r imageToPostFindMany) Update(params ...iImageSetParams) imageToPostUpdateMany {
+	r.query.Operation = "mutation"
+	r.query.Method = "updateMany"
+	r.query.Model = "Image"
+	r.query.Outputs = countOutput
+
+	var v imageToPostUpdateMany
+	v.query = r.query
+	var fields []builder.Field
+	for _, q := range params {
+		fields = append(fields, q.field())
+	}
+	v.query.Inputs = append(v.query.Inputs, builder.Input{
+		Name:   "data",
+		Fields: fields,
+	})
+	return v
+}
+
+type imageToPostUpdateMany struct {
+	query builder.Query
+}
+
+func (r imageToPostUpdateMany) Exec(ctx context.Context) (int, error) {
+	var v updateManyImageResponse
+	err := r.query.Exec(ctx, &v)
+	if v.Errors != nil {
+		first := v.Errors[0]
+		return -1, fmt.Errorf(first.Message)
+	}
+	return v.Data.UpdateManyImage.Count, err
+}
+
+func (r imageToPostFindMany) Delete() imageToPostDeleteMany {
+	var v imageToPostDeleteMany
+	v.query = r.query
+	v.query.Operation = "mutation"
+	v.query.Method = "deleteMany"
+	v.query.Model = "Image"
+	v.query.Outputs = countOutput
+	return v
+}
+
+type imageToPostDeleteMany struct {
+	query builder.Query
+}
+
+func (r imageToPostDeleteMany) Exec(ctx context.Context) (int, error) {
+	var v deleteManyImageResponse
+	err := r.query.Exec(ctx, &v)
+	if v.Errors != nil {
+		first := v.Errors[0]
+		return -1, fmt.Errorf(first.Message)
+	}
+	return v.Data.DeleteManyImage.Count, err
+}
+
+type imageFindOne struct {
+	query builder.Query
+}
+
+func (r imageFindOne) getQuery() builder.Query {
+	return r.query
+}
+
+func (r imageFindOne) with()          {}
+func (r imageFindOne) imageModel()    {}
+func (r imageFindOne) imageRelation() {}
+
+func (r imageActions) FindOne(
+
+	params iImageEqualsParamsUnique,
+) imageFindOne {
+	var v imageFindOne
+	v.query = builder.NewQuery()
+	v.query.Client = r.client
+
+	v.query.Operation = "query"
+	v.query.Method = "findOne"
+	v.query.Model = "Image"
+	v.query.Outputs = imageOutput
+
+	v.query.Inputs = append(v.query.Inputs, builder.Input{
+		Name:   "where",
+		Fields: []builder.Field{params.field()},
+	})
+
+	return v
+}
+
+func (r imageFindOne) With(params ...iImageRelationWith) imageFindOne {
+	for _, q := range params {
+		query := q.getQuery()
+		r.query.Outputs = append(r.query.Outputs, builder.Output{
+			Name:    query.Method,
+			Inputs:  query.Inputs,
+			Outputs: query.Outputs,
+		})
+	}
+
+	return r
+}
+
+func (r imageFindOne) Exec(ctx context.Context) (
+	ImageModel,
+	error,
+) {
+	var v findOneImageResponse
+	err := r.query.Exec(ctx, &v)
+	if v.Errors != nil {
+		first := v.Errors[0]
+		return ImageModel{}, fmt.Errorf(first.Message)
+	}
+
+	if v.Data.FindOneImage == nil {
+		return ImageModel{}, ErrNotFound
+	}
+
+	return *v.Data.FindOneImage, err
+}
+
+func (r imageFindOne) Update(params ...iImageSetParams) imageUpdateOne {
+	r.query.Operation = "mutation"
+	r.query.Method = "updateOne"
+	r.query.Model = "Image"
+	r.query.Outputs = imageOutput
+
+	var v imageUpdateOne
+	v.query = r.query
+	var fields []builder.Field
+	for _, q := range params {
+		fields = append(fields, q.field())
+	}
+	v.query.Inputs = append(v.query.Inputs, builder.Input{
+		Name:   "data",
+		Fields: fields,
+	})
+	return v
+}
+
+type imageUpdateOne struct {
+	query builder.Query
+}
+
+func (r imageUpdateOne) Exec(ctx context.Context) (ImageModel, error) {
+	var v updateOneImageResponse
+	err := r.query.Exec(ctx, &v)
+	if v.Errors != nil {
+		first := v.Errors[0]
+		return ImageModel{}, fmt.Errorf(first.Message)
+	}
+	return v.Data.UpdateOneImage, err
+}
+
+func (r imageFindOne) Delete() imageDeleteOne {
+	var v imageDeleteOne
+	v.query = r.query
+	v.query.Operation = "mutation"
+	v.query.Method = "deleteOne"
+	v.query.Model = "Image"
+	v.query.Outputs = imageOutput
+	return v
+}
+
+type imageDeleteOne struct {
+	query builder.Query
+}
+
+func (r imageDeleteOne) Exec(ctx context.Context) (ImageModel, error) {
+	var v deleteOneImageResponse
+	err := r.query.Exec(ctx, &v)
+	if v.Errors != nil {
+		first := v.Errors[0]
+		return ImageModel{}, fmt.Errorf(first.Message)
+	}
+	return v.Data.DeleteOneImage, err
+}
+
+type imageFindMany struct {
+	query builder.Query
+}
+
+func (r imageFindMany) getQuery() builder.Query {
+	return r.query
+}
+
+func (r imageFindMany) with()          {}
+func (r imageFindMany) imageModel()    {}
+func (r imageFindMany) imageRelation() {}
+
+func (r imageActions) FindMany(
+
+	params ...iImageParams,
+) imageFindMany {
+	var v imageFindMany
+	v.query = builder.NewQuery()
+	v.query.Client = r.client
+
+	v.query.Operation = "query"
+	v.query.Method = "findMany"
+	v.query.Model = "Image"
+	v.query.Outputs = imageOutput
+
+	var where []builder.Field
+	for _, q := range params {
+		if query := q.getQuery(); query.Operation != "" {
+			v.query.Outputs = append(v.query.Outputs, builder.Output{
+				Name:    query.Method,
+				Inputs:  query.Inputs,
+				Outputs: query.Outputs,
+			})
+		} else {
+			where = append(where, q.field())
+		}
+	}
+
+	if len(where) > 0 {
+		v.query.Inputs = append(v.query.Inputs, builder.Input{
+			Name:   "where",
+			Fields: where,
+		})
+	}
+
+	return v
+}
+
+func (r imageFindMany) With(params ...iImageRelationWith) imageFindMany {
+	for _, q := range params {
+		query := q.getQuery()
+		r.query.Outputs = append(r.query.Outputs, builder.Output{
+			Name:    query.Method,
+			Inputs:  query.Inputs,
+			Outputs: query.Outputs,
+		})
+	}
+
+	return r
+}
+
+func (r imageFindMany) OrderBy(param iImageOrderByParams) imageFindMany {
+	direction, _ := param.field().Value.(runtime.Direction)
+	r.query.Inputs = append(r.query.Inputs, builder.Input{
+		Name:  "orderBy",
+		Value: runtime.Direction(param.field().Name + "_" + string(direction)),
+	})
+	return r
+}
+
+func (r imageFindMany) Skip(count int) imageFindMany {
+	r.query.Inputs = append(r.query.Inputs, builder.Input{
+		Name:  "skip",
+		Value: count,
+	})
+	return r
+}
+
+func (r imageFindMany) First(count int) imageFindMany {
+	r.query.Inputs = append(r.query.Inputs, builder.Input{
+		Name:  "first",
+		Value: count,
+	})
+	return r
+}
+
+func (r imageFindMany) Last(count int) imageFindMany {
+	r.query.Inputs = append(r.query.Inputs, builder.Input{
+		Name:  "last",
+		Value: count,
+	})
+	return r
+}
+
+func (r imageFindMany) After(cursor iImageCursorParams) imageFindMany {
+	r.query.Inputs = append(r.query.Inputs, builder.Input{
+		Name:   "after",
+		Fields: []builder.Field{cursor.field()},
+	})
+	return r
+}
+
+func (r imageFindMany) Before(cursor iImageCursorParams) imageFindMany {
+	r.query.Inputs = append(r.query.Inputs, builder.Input{
+		Name:   "before",
+		Fields: []builder.Field{cursor.field()},
+	})
+	return r
+}
+
+func (r imageFindMany) Exec(ctx context.Context) (
+	[]ImageModel,
+	error,
+) {
+	var v findManyImageResponse
+	err := r.query.Exec(ctx, &v)
+	if v.Errors != nil {
+		first := v.Errors[0]
+		return []ImageModel{}, fmt.Errorf(first.Message)
+	}
+
+	return v.Data.FindManyImage, err
+}
+
+func (r imageFindMany) Update(params ...iImageSetParams) imageUpdateMany {
+	r.query.Operation = "mutation"
+	r.query.Method = "updateMany"
+	r.query.Model = "Image"
+	r.query.Outputs = countOutput
+
+	var v imageUpdateMany
+	v.query = r.query
+	var fields []builder.Field
+	for _, q := range params {
+		fields = append(fields, q.field())
+	}
+	v.query.Inputs = append(v.query.Inputs, builder.Input{
+		Name:   "data",
+		Fields: fields,
+	})
+	return v
+}
+
+type imageUpdateMany struct {
+	query builder.Query
+}
+
+func (r imageUpdateMany) Exec(ctx context.Context) (int, error) {
+	var v updateManyImageResponse
+	err := r.query.Exec(ctx, &v)
+	if v.Errors != nil {
+		first := v.Errors[0]
+		return -1, fmt.Errorf(first.Message)
+	}
+	return v.Data.UpdateManyImage.Count, err
+}
+
+func (r imageFindMany) Delete() imageDeleteMany {
+	var v imageDeleteMany
+	v.query = r.query
+	v.query.Operation = "mutation"
+	v.query.Method = "deleteMany"
+	v.query.Model = "Image"
+	v.query.Outputs = countOutput
+	return v
+}
+
+type imageDeleteMany struct {
+	query builder.Query
+}
+
+func (r imageDeleteMany) Exec(ctx context.Context) (int, error) {
+	var v deleteManyImageResponse
+	err := r.query.Exec(ctx, &v)
+	if v.Errors != nil {
+		first := v.Errors[0]
+		return -1, fmt.Errorf(first.Message)
+	}
+	return v.Data.DeleteManyImage.Count, err
+}
+
 // --- template structs.gotpl ---
 
 type findOneUserResponse struct {
@@ -2682,13 +4096,100 @@ type deleteManyPostResult struct {
 	Count int `json:"count"`
 }
 
+type findOneImageResponse struct {
+	Errors []engine.GQLError `json:"errors"`
+	Data   struct {
+		FindOneImage *ImageModel `json:"findOneImage"`
+	} `json:"data"`
+}
+
+type findOneImageResult struct {
+	Count int `json:"count"`
+}
+
+type findManyImageResponse struct {
+	Errors []engine.GQLError `json:"errors"`
+	Data   struct {
+		FindManyImage []ImageModel `json:"findManyImage"`
+	} `json:"data"`
+}
+
+type findManyImageResult struct {
+	Count int `json:"count"`
+}
+
+type createOneImageResponse struct {
+	Errors []engine.GQLError `json:"errors"`
+	Data   struct {
+		CreateOneImage ImageModel `json:"createOneImage"`
+	} `json:"data"`
+}
+
+type createOneImageResult struct {
+	Count int `json:"count"`
+}
+
+type createManyImageResponse struct {
+	Errors []engine.GQLError `json:"errors"`
+	Data   struct {
+		CreateManyImage createManyImageResult `json:"createManyImage"`
+	} `json:"data"`
+}
+
+type createManyImageResult struct {
+	Count int `json:"count"`
+}
+
+type updateOneImageResponse struct {
+	Errors []engine.GQLError `json:"errors"`
+	Data   struct {
+		UpdateOneImage ImageModel `json:"updateOneImage"`
+	} `json:"data"`
+}
+
+type updateOneImageResult struct {
+	Count int `json:"count"`
+}
+
+type updateManyImageResponse struct {
+	Errors []engine.GQLError `json:"errors"`
+	Data   struct {
+		UpdateManyImage updateManyImageResult `json:"updateManyImage"`
+	} `json:"data"`
+}
+
+type updateManyImageResult struct {
+	Count int `json:"count"`
+}
+
+type deleteOneImageResponse struct {
+	Errors []engine.GQLError `json:"errors"`
+	Data   struct {
+		DeleteOneImage ImageModel `json:"deleteOneImage"`
+	} `json:"data"`
+}
+
+type deleteOneImageResult struct {
+	Count int `json:"count"`
+}
+
+type deleteManyImageResponse struct {
+	Errors []engine.GQLError `json:"errors"`
+	Data   struct {
+		DeleteManyImage deleteManyImageResult `json:"deleteManyImage"`
+	} `json:"data"`
+}
+
+type deleteManyImageResult struct {
+	Count int `json:"count"`
+}
+
 // --- template client.gotpl ---
 const schema = `datasource db {
     provider = "mysql"
-    // url      = env("DATABASE_URL")
-    url      = "mysql://neulhan:gksruf@localhost:3306/neulhanDB"
-
-
+    url      = env("DATABASE_URL")
+    // url      = "mysql://neulhan1:gksruf@15.165.21.100:3306/neulhanDB"
+    // url      = "mysql://neulhan:gksruf@localhost:3306/neulhanDB"
 }
 
 generator db {
@@ -2714,8 +4215,17 @@ model Post {
     title     String
     content   String
 
-    author   User   @relation(fields: [authorID], references: [id])
+    author   User    @relation(fields: [authorID], references: [id])
     authorID String
+    images   Image[]
+}
+
+model Image {
+    id     String @default(cuid()) @id
+    name   String
+    url    String
+    post   Post   @relation(fields: [postID], references: [id])
+    postID String
 }
 `
 
@@ -2745,6 +4255,7 @@ func NewClient() *PrismaClient {
 	c.Engine = engine.NewEngine(schema, hasBinaryTargets)
 	c.User = userActions{client: c}
 	c.Post = postActions{client: c}
+	c.Image = imageActions{client: c}
 
 	c.Actions = &raw.Actions{Client: c}
 
@@ -2762,6 +4273,8 @@ type PrismaClient struct {
 	User userActions
 	// Post provides access to CRUD methods.
 	Post postActions
+	// Image provides access to CRUD methods.
+	Image imageActions
 }
 
 // Connects to the Prisma query engine. Required to call before accessing data.
@@ -2877,7 +4390,8 @@ type RawPost struct {
 
 // RelationsPost holds the relation data separately
 type RelationsPost struct {
-	Author *UserModel `json:"author"`
+	Author *UserModel   `json:"author"`
+	Images []ImageModel `json:"images"`
 }
 
 func (r PostModel) Author() (value UserModel) {
@@ -2885,6 +4399,39 @@ func (r PostModel) Author() (value UserModel) {
 		panic("attempted to access author but did not fetch it using the .With() syntax")
 	}
 	return *r.RelationsPost.Author
+}
+
+func (r PostModel) Images() (value []ImageModel) {
+	if r.RelationsPost.Images == nil {
+		return value
+	}
+	return r.RelationsPost.Images
+}
+
+// ImageModel represents the `json:"Image"` model and is a wrapper for accessing fields and methods
+type ImageModel struct {
+	RawImage
+	RelationsImage
+}
+
+// RawImage holds the actual data
+type RawImage struct {
+	ID     string `json:"id"`
+	Name   string `json:"name"`
+	URL    string `json:"url"`
+	PostID string `json:"postID"`
+}
+
+// RelationsImage holds the relation data separately
+type RelationsImage struct {
+	Post *PostModel `json:"post"`
+}
+
+func (r ImageModel) Post() (value PostModel) {
+	if r.RelationsImage.Post == nil {
+		panic("attempted to access post but did not fetch it using the .With() syntax")
+	}
+	return *r.RelationsImage.Post
 }
 
 // --- template query.gotpl ---
@@ -3734,6 +5281,8 @@ type postQuery struct {
 	//
 	// @required
 	AuthorID postQueryAuthorIDString
+
+	Images postQueryImagesRelations
 }
 
 func (postQuery) Not(params ...iPostParams) postParams {
@@ -4327,6 +5876,571 @@ func (r postQueryAuthorIDString) HasSuffix(value string) postParams {
 		data: builder.Field{
 			Action: "ends_with",
 			Name:   "authorID",
+			Value:  value,
+		},
+	}
+}
+
+// base struct
+type postQueryImagesImage struct{}
+
+type postQueryImagesRelations struct{}
+
+// Post -> Images
+//
+// @relation
+// @optional
+func (postQueryImagesRelations) Some(
+	params ...iImageParams,
+) postParams {
+	var fields []builder.Field
+
+	for _, q := range params {
+		fields = append(fields, q.field())
+	}
+
+	return postParams{
+		data: builder.Field{
+			Name:   "images",
+			Action: "some",
+			Fields: fields,
+		},
+	}
+}
+
+// Post -> Images
+//
+// @relation
+// @optional
+func (postQueryImagesRelations) Every(
+	params ...iImageParams,
+) postParams {
+	var fields []builder.Field
+
+	for _, q := range params {
+		fields = append(fields, q.field())
+	}
+
+	return postParams{
+		data: builder.Field{
+			Name:   "images",
+			Action: "every",
+			Fields: fields,
+		},
+	}
+}
+
+func (postQueryImagesRelations) Fetch(
+
+	params ...iImageParams,
+
+) postToImagesFindMany {
+	var v postToImagesFindMany
+
+	v.query.Operation = "query"
+	v.query.Method = "images"
+	v.query.Outputs = imageOutput
+
+	var where []builder.Field
+	for _, q := range params {
+		if query := q.getQuery(); query.Operation != "" {
+			v.query.Outputs = append(v.query.Outputs, builder.Output{
+				Name:    query.Method,
+				Inputs:  query.Inputs,
+				Outputs: query.Outputs,
+			})
+		} else {
+			where = append(where, q.field())
+		}
+	}
+
+	if len(where) > 0 {
+		v.query.Inputs = append(v.query.Inputs, builder.Input{
+			Name:   "where",
+			Fields: where,
+		})
+	}
+
+	return v
+}
+
+func (r postQueryImagesRelations) Link(
+	params ...iImageParams,
+) postSetParams {
+	var fields []builder.Field
+
+	for _, q := range params {
+		fields = append(fields, q.field())
+	}
+
+	return postSetParams{
+		data: builder.Field{
+			Name: "images",
+			Fields: []builder.Field{
+				{
+					Name:   "connect",
+					Fields: fields,
+				},
+			},
+		},
+	}
+}
+
+func (r postQueryImagesRelations) Unlink() postSetParams {
+	return postSetParams{
+		data: builder.Field{
+			Name: "images",
+			Fields: []builder.Field{
+				{
+					Name:  "disconnect",
+					Value: true,
+				},
+			},
+		},
+	}
+}
+
+// Image acts as a namespaces to access query methods for the Image model
+var Image = imageQuery{}
+
+// imageQuery exposes query functions for the image model
+type imageQuery struct {
+	// ID
+	//
+	// @required
+	ID imageQueryIDString
+
+	// Name
+	//
+	// @required
+	Name imageQueryNameString
+
+	// URL
+	//
+	// @required
+	URL imageQueryURLString
+
+	Post imageQueryPostRelations
+
+	// PostID
+	//
+	// @required
+	PostID imageQueryPostIDString
+}
+
+func (imageQuery) Not(params ...iImageParams) imageParams {
+	var fields []builder.Field
+
+	for _, q := range params {
+		fields = append(fields, q.field())
+	}
+
+	return imageParams{
+		data: builder.Field{
+			Name:     "NOT",
+			List:     true,
+			WrapList: true,
+			Fields:   fields,
+		},
+	}
+}
+
+func (imageQuery) Or(params ...iImageParams) imageParams {
+	var fields []builder.Field
+
+	for _, q := range params {
+		fields = append(fields, q.field())
+	}
+
+	return imageParams{
+		data: builder.Field{
+			Name:     "OR",
+			List:     true,
+			WrapList: true,
+			Fields:   fields,
+		},
+	}
+}
+
+// base struct
+type imageQueryIDString struct{}
+
+// Set the required value of ID
+func (r imageQueryIDString) Set(value string) imageSetParams {
+
+	return imageSetParams{
+		data: builder.Field{
+			Name:  "id",
+			Value: value,
+		},
+	}
+
+}
+
+func (r imageQueryIDString) Equals(value string) imageWithPrismaIDEqualsParamsUnique {
+	return imageWithPrismaIDEqualsParamsUnique{
+		data: builder.Field{
+			Name:  "id",
+			Value: value,
+		},
+	}
+}
+
+func (r imageQueryIDString) In(values []string) imageParamsUnique {
+	f := builder.Field{
+		Name:   "id",
+		Action: "in",
+		List:   true,
+	}
+	for _, v := range values {
+		f.Fields = append(f.Fields, builder.Field{
+			Value: v,
+		})
+	}
+	return imageParamsUnique{
+		data: f,
+	}
+}
+
+func (r imageQueryIDString) Order(direction runtime.Direction) imageParams {
+	return imageParams{
+		data: builder.Field{
+			Name:  "id",
+			Value: direction,
+		},
+	}
+}
+
+func (r imageQueryIDString) Cursor(cursor string) imageCursorParams {
+	return imageCursorParams{
+		data: builder.Field{
+			Name:  "id",
+			Value: cursor,
+		},
+	}
+}
+
+func (r imageQueryIDString) Contains(value string) imageParamsUnique {
+	return imageParamsUnique{
+		data: builder.Field{
+			Action: "contains",
+			Name:   "id",
+			Value:  value,
+		},
+	}
+}
+
+func (r imageQueryIDString) HasPrefix(value string) imageParamsUnique {
+	return imageParamsUnique{
+		data: builder.Field{
+			Action: "starts_with",
+			Name:   "id",
+			Value:  value,
+		},
+	}
+}
+
+func (r imageQueryIDString) HasSuffix(value string) imageParamsUnique {
+	return imageParamsUnique{
+		data: builder.Field{
+			Action: "ends_with",
+			Name:   "id",
+			Value:  value,
+		},
+	}
+}
+
+// base struct
+type imageQueryNameString struct{}
+
+// Set the required value of Name
+func (r imageQueryNameString) Set(value string) imageWithPrismaNameSetParams {
+
+	return imageWithPrismaNameSetParams{
+		data: builder.Field{
+			Name:  "name",
+			Value: value,
+		},
+	}
+
+}
+
+func (r imageQueryNameString) Equals(value string) imageWithPrismaNameEqualsParams {
+	return imageWithPrismaNameEqualsParams{
+		data: builder.Field{
+			Name:  "name",
+			Value: value,
+		},
+	}
+}
+
+func (r imageQueryNameString) In(values []string) imageParams {
+	f := builder.Field{
+		Name:   "name",
+		Action: "in",
+		List:   true,
+	}
+	for _, v := range values {
+		f.Fields = append(f.Fields, builder.Field{
+			Value: v,
+		})
+	}
+	return imageParams{
+		data: f,
+	}
+}
+
+func (r imageQueryNameString) Order(direction runtime.Direction) imageParams {
+	return imageParams{
+		data: builder.Field{
+			Name:  "name",
+			Value: direction,
+		},
+	}
+}
+
+func (r imageQueryNameString) Contains(value string) imageParams {
+	return imageParams{
+		data: builder.Field{
+			Action: "contains",
+			Name:   "name",
+			Value:  value,
+		},
+	}
+}
+
+func (r imageQueryNameString) HasPrefix(value string) imageParams {
+	return imageParams{
+		data: builder.Field{
+			Action: "starts_with",
+			Name:   "name",
+			Value:  value,
+		},
+	}
+}
+
+func (r imageQueryNameString) HasSuffix(value string) imageParams {
+	return imageParams{
+		data: builder.Field{
+			Action: "ends_with",
+			Name:   "name",
+			Value:  value,
+		},
+	}
+}
+
+// base struct
+type imageQueryURLString struct{}
+
+// Set the required value of URL
+func (r imageQueryURLString) Set(value string) imageWithPrismaURLSetParams {
+
+	return imageWithPrismaURLSetParams{
+		data: builder.Field{
+			Name:  "url",
+			Value: value,
+		},
+	}
+
+}
+
+func (r imageQueryURLString) Equals(value string) imageWithPrismaURLEqualsParams {
+	return imageWithPrismaURLEqualsParams{
+		data: builder.Field{
+			Name:  "url",
+			Value: value,
+		},
+	}
+}
+
+func (r imageQueryURLString) In(values []string) imageParams {
+	f := builder.Field{
+		Name:   "url",
+		Action: "in",
+		List:   true,
+	}
+	for _, v := range values {
+		f.Fields = append(f.Fields, builder.Field{
+			Value: v,
+		})
+	}
+	return imageParams{
+		data: f,
+	}
+}
+
+func (r imageQueryURLString) Order(direction runtime.Direction) imageParams {
+	return imageParams{
+		data: builder.Field{
+			Name:  "url",
+			Value: direction,
+		},
+	}
+}
+
+func (r imageQueryURLString) Contains(value string) imageParams {
+	return imageParams{
+		data: builder.Field{
+			Action: "contains",
+			Name:   "url",
+			Value:  value,
+		},
+	}
+}
+
+func (r imageQueryURLString) HasPrefix(value string) imageParams {
+	return imageParams{
+		data: builder.Field{
+			Action: "starts_with",
+			Name:   "url",
+			Value:  value,
+		},
+	}
+}
+
+func (r imageQueryURLString) HasSuffix(value string) imageParams {
+	return imageParams{
+		data: builder.Field{
+			Action: "ends_with",
+			Name:   "url",
+			Value:  value,
+		},
+	}
+}
+
+// base struct
+type imageQueryPostPost struct{}
+
+type imageQueryPostRelations struct{}
+
+// Image -> Post
+//
+// @relation
+// @required
+func (imageQueryPostRelations) Where(
+	params ...iPostParams,
+) imageParams {
+	var fields []builder.Field
+
+	for _, q := range params {
+		fields = append(fields, q.field())
+	}
+
+	return imageParams{
+		data: builder.Field{
+			Name:   "post",
+			Action: "",
+			Fields: fields,
+		},
+	}
+}
+
+func (imageQueryPostRelations) Fetch() imageToPostFindOne {
+	var v imageToPostFindOne
+
+	v.query.Operation = "query"
+	v.query.Method = "post"
+	v.query.Outputs = postOutput
+
+	return v
+}
+
+func (r imageQueryPostRelations) Link(
+	params ...iPostParams,
+) imageWithPrismaPostSetParams {
+	var fields []builder.Field
+
+	for _, q := range params {
+		fields = append(fields, q.field())
+	}
+
+	return imageWithPrismaPostSetParams{
+		data: builder.Field{
+			Name: "post",
+			Fields: []builder.Field{
+				{
+					Name:   "connect",
+					Fields: fields,
+				},
+			},
+		},
+	}
+}
+
+// base struct
+type imageQueryPostIDString struct{}
+
+// Set the required value of PostID
+func (r imageQueryPostIDString) Set(value string) imageWithPrismaPostIDSetParams {
+
+	return imageWithPrismaPostIDSetParams{
+		data: builder.Field{
+			Name:  "postID",
+			Value: value,
+		},
+	}
+
+}
+
+func (r imageQueryPostIDString) Equals(value string) imageWithPrismaPostIDEqualsParams {
+	return imageWithPrismaPostIDEqualsParams{
+		data: builder.Field{
+			Name:  "postID",
+			Value: value,
+		},
+	}
+}
+
+func (r imageQueryPostIDString) In(values []string) imageParams {
+	f := builder.Field{
+		Name:   "postID",
+		Action: "in",
+		List:   true,
+	}
+	for _, v := range values {
+		f.Fields = append(f.Fields, builder.Field{
+			Value: v,
+		})
+	}
+	return imageParams{
+		data: f,
+	}
+}
+
+func (r imageQueryPostIDString) Order(direction runtime.Direction) imageParams {
+	return imageParams{
+		data: builder.Field{
+			Name:  "postID",
+			Value: direction,
+		},
+	}
+}
+
+func (r imageQueryPostIDString) Contains(value string) imageParams {
+	return imageParams{
+		data: builder.Field{
+			Action: "contains",
+			Name:   "postID",
+			Value:  value,
+		},
+	}
+}
+
+func (r imageQueryPostIDString) HasPrefix(value string) imageParams {
+	return imageParams{
+		data: builder.Field{
+			Action: "starts_with",
+			Name:   "postID",
+			Value:  value,
+		},
+	}
+}
+
+func (r imageQueryPostIDString) HasSuffix(value string) imageParams {
+	return imageParams{
+		data: builder.Field{
+			Action: "ends_with",
+			Name:   "postID",
 			Value:  value,
 		},
 	}

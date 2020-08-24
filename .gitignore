@@ -1,1 +1,4 @@
 .env
+migrations/*/*
+migrations/*
+alias.sh

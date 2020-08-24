@@ -1,9 +1,6 @@
 datasource db {
     provider = "mysql"
-    // url      = env("DATABASE_URL")
-    url      = "mysql://neulhan:gksruf@localhost:3306/neulhanDB"
-
-
+    url      = env("DATABASE_URL")
 }
 
 generator db {
@@ -29,6 +26,15 @@ model Post {
     title     String
     content   String
 
-    author   User   @relation(fields: [authorID], references: [id])
+    author   User    @relation(fields: [authorID], references: [id])
     authorID String
+    images   Image[]
+}
+
+model Image {
+    id     String @default(cuid()) @id
+    name   String
+    url    String
+    post   Post   @relation(fields: [postID], references: [id])
+    postID String
 }
